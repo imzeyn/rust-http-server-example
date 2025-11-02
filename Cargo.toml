@@ -1,0 +1,18 @@
+[package]
+name = "rust_example_http_server_with_hyper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hyper = { version = "1", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+http-body-util = "0.1"
+hyper-util = { version = "0.1", features = ["full"] }
+rustls = { version = "0.23", features = ["aws-lc-rs"] }
+dashmap = "6.1.0"
+tokio-rustls = "0.26.4"
+bytes = "1.10.1"
+sha1 = "0.10.6"
+base64 = "0.22.1" 
+tokio-tungstenite = "0.28.0"
+futures-util = "0.3.31"

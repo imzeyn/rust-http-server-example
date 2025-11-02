@@ -1,0 +1,41 @@
+<script>
+const ws = new WebSocket('ws://example.com/');
+
+ws.onopen = () => {
+    console.log('Connection open');
+};
+
+ws.onmessage = (event) => {
+    console.log('Message:', event.data);
+};
+
+ws.onclose = () => {
+    console.log('Connection closed');
+};
+
+ws.onerror = (err) => {
+    console.error('Error:', err);
+};
+
+/*
+for tls connections (https) 
+const wss = new WebSocket('wss://example.com/');
+
+
+wss.onopen = () => {
+    console.log('Connection open');
+};
+
+wss.onmessage = (event) => {
+    console.log('Message:', event.data);
+};
+
+wss.onclose = () => {
+    console.log('Connection closed');
+};
+
+wss.onerror = (err) => {
+    console.error('Error:', err);
+};
+*/
+</script>
